@@ -1,0 +1,26 @@
+If You Want to “Stop” the Website
+Here are your real options again:
+
+✅ Option 1: Delete or Rename Files from IIS Folder
+Manually go to:
+
+makefile
+Copy
+Edit
+C:\inetpub\wwwroot
+And either:
+
+Delete your index.html or other files
+
+Or rename them (e.g., index_old.html)
+
+Then your site will be “stopped” — it won’t show in the browser.
+
+✅ Option 2: Stop IIS Web Server (temporarily)
+Open Command Prompt as Administrator and run:
+
+cmd
+iisreset /stop
+
+To restart it:
+iisreset /start
